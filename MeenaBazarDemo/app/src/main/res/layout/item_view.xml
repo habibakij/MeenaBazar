@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8sp"
+    android:background="#aaa">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_marginRight="1sp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/productImage"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:background="#fff"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/path_57"/>
+
+                    <TextView
+                        android:id="@+id/productTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="20sp"
+                        android:layout_below="@id/productImage"
+                        android:background="#fff"
+                        android:maxLines="2"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:text="product name"/>
+
+                    <LinearLayout
+                        android:id="@+id/prize"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_below="@+id/productTitle">
+
+                        <TextView
+                            android:id="@+id/productPrize"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="1dp"
+                            android:background="#fff"
+                            android:text="110৳"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/productDis"
+                            android:layout_width="0sp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:layout_marginTop="1dp"
+                            android:background="#fff"
+                            android:text="110৳"
+                            android:textAllCaps="true"
+                            android:textAppearance="?android:textAppearanceLarge"
+                            android:textColor="#000"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/addbagplus"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="30sp"
+                        android:layout_marginTop="1sp"
+                        android:layout_below="@+id/prize">
+
+                        <TextView
+                            android:id="@+id/add_to_baz"
+                            android:layout_width="0sp"
+                            android:layout_height="30sp"
+                            android:background="#fff"
+                            android:layout_weight="3"
+                            android:text="add to baz"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginRight="1sp"/>
+
+                        <ImageButton
+                            android:id="@+id/delete"
+                            android:layout_width="0sp"
+                            android:layout_height="30sp"
+                            android:layout_weight=".5"
+                            android:visibility="gone"
+                            android:src="@drawable/group_1585"
+                            android:background="#fff"
+                            android:layout_marginRight="1sp"/>
+
+                        <TextView
+                            android:id="@+id/productCount"
+                            android:layout_width="0sp"
+                            android:layout_height="30sp"
+                            android:background="#fff"
+                            android:layout_weight="1.5"
+                            android:text="1"
+                            android:visibility="gone"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:layout_marginRight="1sp"/>
+
+                        <ImageButton
+                            android:id="@+id/productPlus"
+                            android:layout_width="0sp"
+                            android:layout_height="30sp"
+                            android:layout_weight=".5"
+                            android:background="#fff"
+                            android:scaleType="fitCenter"
+                            app:srcCompat="@drawable/group_2380" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
