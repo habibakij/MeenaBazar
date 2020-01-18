@@ -1,4 +1,8 @@
 # MeenaBazar
+
+This is Restfull API simple Project
+
+
 MeenaBazar API resource data
 
 Adapter Class where i added image with GLIDE Library
@@ -173,7 +177,7 @@ public class RecylarViewAdapter extends RecyclerView.Adapter<RecylarViewAdapter.
     }
 }
 
-when they can't permission to access image
+preview image but don't permission to access product image
 
 ![78214994_149086986394645_2606366956156092416_n](https://user-images.githubusercontent.com/31959794/70170317-a9843080-16f6-11ea-8bdb-9d8793c285d2.jpg)
 
